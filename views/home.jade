@@ -10,6 +10,12 @@ html( lang="en" )
         link(href="css/launchpad.css", rel="stylesheet")
     body(style="padding-bottom:10rem;")
         .container
+            .row
+                .col-md-12
+                    .nav.pull-right 
+                        .navbar-text 1-800-555-1234 | 
+                            a(href='/') test
+        .container
             +nav("Launchpad", "main")
                 +nav_item( "/", "active" ) Home
                 +nav_item( "/" ) About
