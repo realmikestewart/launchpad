@@ -34,3 +34,9 @@ gulp.task('scripts', function() {
 
 
 gulp.task('default', ["styles", "scripts"]);
+
+
+gulp.task('watch', function() {
+
+    gulp.watch('assets/less/*.less', ['styles']);
+});
