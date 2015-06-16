@@ -1,0 +1,54 @@
+//** header gradient color.
+@grade-one: #b3d1f7;
+@grade-two: #fbdd8b;
+.float {
+    float: right;
+}
+
+#footer {
+    background-color: @grade-two;
+}
+
+#legal {
+    font-family: @font-family-serif;
+    text-align: right;
+    background-color: black;
+}
+
+#banner {
+    background: linear-gradient(to bottom, @grade-one 0%, @grade-one 20%, @grade-two 20%, @grade-two 80%, @grade-one 80%, @grade-one 100%);
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    horizontal-align: middle;
+    float: none;
+}
+
+@media only screen and (min-width: @screen-sm) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: @screen-md) {
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: @screen-md) {
+    #banner {
+        top: -35px;
+        z-index: -1;
+    }
+    .mainnav {
+        top: 40px;
+    }
+}
